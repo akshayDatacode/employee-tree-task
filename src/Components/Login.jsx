@@ -44,7 +44,7 @@ const Login = () => {
           <div className="col-3 text-start border rounded shadow p-5 ">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Email</label>
                 <input name="email" onChange={(e) => handleChange(e)} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
               </div>
               <div class="form-group mt-4">
