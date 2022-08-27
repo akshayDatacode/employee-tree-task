@@ -1,7 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const cors = require("cors");
-// const Router = require("./routes")
+const Router = require("./routes/employeeRoutes")
 const mongo = require('./configs/dbConfig')
 const app = express()
 
@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-// app.use(Router);
+app.use(Router);
 
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*")
