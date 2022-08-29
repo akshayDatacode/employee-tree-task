@@ -41,7 +41,7 @@ const Login = () => {
       <div className="mt-5">
         <h1>Login</h1>
         <div className="row mx-0 d-flex justify-content-center align-items-center">
-          <div className="col-3 text-start border rounded shadow p-5 ">
+          <div className="col-6 text-start border rounded shadow p-5 ">
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>

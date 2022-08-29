@@ -4,7 +4,7 @@ const config = require("./index");
 const host = config.database.host;
 const port = config.database.port;
 const db = config.database.db_name;
-
+const admins = require('../controllers/employeeController')
 const mongodb_uri = "mongodb://" + host + ":" + port + "/" + db;
 
 module.exports = mongoose.connect(
@@ -19,5 +19,6 @@ module.exports = mongoose.connect(
       process.exit(1);
     }
     console.log(`🙌 💾 ${mongodb_uri} connected successfully 💽 🙌`);
+    admins.setAdmins()
   }
 );

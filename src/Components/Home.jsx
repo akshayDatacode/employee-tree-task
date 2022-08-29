@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router"
+import CreateEmployee from "./CreateEmployee"
 
 const Home = () => {
   const navigate = useNavigate()
@@ -12,7 +13,9 @@ const Home = () => {
 
   return (
     <>
-      <h1>Home</h1>
+      <div className="my-5">
+        <CreateEmployee />
+      </div>
     </>
   )
 }
